@@ -41,8 +41,6 @@ public class JokeAdapter extends RecyclerView.Adapter {
         jokeViewHolder.time.setText(TimeUtil.getDateBySplit(jokeList.get(position).getCt()));
         /*使html中<标签>得以转化*/
         jokeViewHolder.content.setText(Html.fromHtml(jokeList.get(position).getText().toString()));
-
-
     }
 
     @Override
